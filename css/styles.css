@@ -218,6 +218,12 @@ footer a { color: #fff; }
 @media (max-width: 819px) {
   .mobile-cta { display: flex; }
   body { padding-bottom: 84px; }
-  .hero { min-height: calc(100svh - 148px); }
-  .hero-copy { padding: 12px 0 18px; }
+  .hero {
+    min-height: calc(100svh - 148px);
+    align-items: flex-start;
+  }
+  .hero::after {
+    background: linear-gradient(180deg, rgba(42,27,34,0.55) 0%, rgba(42,27,34,0.28) 42%, rgba(42,27,34,0.45) 100%);
+  }
+  .hero-copy { padding: 26px 0 16px; }
 }
